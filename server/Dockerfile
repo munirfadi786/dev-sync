@@ -29,4 +29,4 @@ COPY --from=builder /build/package*.json .
 EXPOSE 3000
 
 # Start the server
-CMD ["npm", "run", "start"]
+CMD ["node", "dist/server.js"]
