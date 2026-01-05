@@ -6,7 +6,7 @@
 
     # Set working directory
     WORKDIR /build
-    ENV NODE_OPTIONS="--max_old_space_size=4096"
+    ENV NODE_OPTIONS="--max_old_space_size=512"
     # Copy package files and install dependencies
     COPY package.json package-lock.json ./
     RUN npm ci
